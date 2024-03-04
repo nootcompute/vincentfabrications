@@ -1,0 +1,27 @@
+#photos img.ls {
+  max-width: 30%;
+  max-height: 900px;
+  /* align-self: center; */
+}
+#photos img.pt {
+  max-width: 20%;
+  max-height: 900px;
+  /* align-self: flex-start; */
+}
+.parag{
+  width: 12%;
+}
+
+@media (max-width: 800px){
+  #photos img.ls {
+    max-width: 34%;
+    /* align-self: center; */
+  }
+  #photos img.pt {
+    max-width: 25%;
+    /* align-self: flex-start; */
+  }
+  .parag {
+    width: 80%;
+  }
+}

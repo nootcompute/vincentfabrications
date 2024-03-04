@@ -1,0 +1,177 @@
+.header {
+    display: flex;
+    /* border: 2px solid blue; */
+    /* background-color: #f4f4f4; */
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    overflow: hidden;
+  }
+  
+.subheader {
+    position: absolute; 
+    width: 87%;
+    top: 0;
+    /* border: 2px solid red; */
+    /* height: 0.9rem; */
+    /* flex-wrap: wrap; */
+    margin: 0;
+    /* background-color: black; */
+    /* background-image: url("images/blankspace.jpg"); */
+    /* background-repeat: repeat; */
+    background-color: rgba(155, 167, 179, 0.781);
+    font-size: 16.5pt;
+    color: rgb(44, 45, 68);
+    z-index: -1;
+    filter: blur(1.2px);
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 0 0 36px 19px rgb(155, 167, 179);
+    text-align: right;
+    padding-right: 1%;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    justify-content: right;
+    /* border: 2px solid white; */
+  }
+
+.parag{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 48%;
+  height: auto;
+  background-color: rgba(205, 215, 226, 0.959);
+  box-shadow: 0 0 10px 0 rgb(170, 170, 170);
+  margin: 1%;
+  padding: 20px;
+  order: -2000;
+  font-size: 14.5pt;
+  color: rgb(24, 24, 24);
+  filter: blur(0.4px);
+  max-height: 50vh;
+  overflow: auto;
+  /* filter: contrast(200%); */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.67);
+  text-align: center;
+  justify-content: center;
+  z-index: 10000;
+  color: azure;
+  font-size: 9pt;
+  font-style: italic;
+}
+.text2{
+    background-color: blue;
+}
+
+.o_img {
+  max-width: 80%;
+  max-height: 90%;
+  margin-top: 3%;
+  z-index: 1000001;
+  padding: 0;
+}
+#photos {
+    /* Prevent vertical gaps */
+    /* border: 2px solid yellow; */
+    margin: 0 auto;
+    /* width: 100%; */
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+#photos img{
+    padding: 1%;
+    object-fit: contain;
+    /* border: 0.9em solid white; */
+    box-sizing: content-box;
+    z-index: 2;
+    /* transition: transform 0.03s; */
+    /* background-color: rgb(255, 255, 255, 0.9); */
+  }
+/* #photos img:hover{
+  transform: scale(1.01);
+} */
+/* #photos img:first-of-type{
+  max-width: 55%;
+} */
+
+
+#text1 img.heady{
+    width: 55%;
+    height: auto;
+    /* padding: 1%; */
+    margin: 1%;
+    object-fit: contain;
+    transition: transform 0.03s;
+    box-shadow: 0 0 6px 0 rgb(164, 169, 194);
+  }
+#text1 img.heady:hover{
+  transform: scale(1.01);
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: rgb(32, 20, 203);
+  margin: 0;
+  line-height: 1.38;
+}
+
+.f_txt {
+  font-size: small;
+  color: rgb(255, 251, 229);
+  z-index: 10000;
+  padding: 0.2%;
+  filter: blur(0.7px)
+}
+
+@media (max-width: 800px){
+    #text1 img.heady {
+      width: 59%;
+    }
+    .o_img {
+      margin-top: 18%;
+      max-width: 94%;
+      max-height: 72vh;
+    }
+
+    .subheader {
+      width: 99%;
+      font-size: 12pt;
+      white-space: pre-line;
+    }
+
+    .parag {
+      padding-top: 1%;
+      width: 80%;
+      font-size: 13pt;
+      max-height: 300px;
+      overflow: auto;
+      /* padding: 1%; */
+    }
+  }
+body {
+    font-family: 'Lucida Sans Console', Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background-crossing.jpg'); 
+    background-repeat: repeat;
+    background-size: 25% auto;
+    /* background-color: goldenrod; */
+
+  }

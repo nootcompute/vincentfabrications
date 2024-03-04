@@ -1,0 +1,26 @@
+#photos img.ls {
+  max-width: 39%;
+  max-height: 900px;
+  /* align-self: center; */
+}
+#photos img.pt {
+  max-width: 13.5%;
+  max-height: 900px;
+  /* align-self: flex-start; */
+}
+
+@media (max-width: 800px){
+  #photos img:last-of-type:not(#headings img){
+    /* display: flex; */
+    /* border: 10px solid red; */
+    order: -1;
+  }
+  #photos img.ls {
+    max-width: 25%;
+    /* align-self: center; */
+  }
+  #photos img.pt {
+    max-width: 12%;
+    /* align-self: flex-start; */
+  }
+}

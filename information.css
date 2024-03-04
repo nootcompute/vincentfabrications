@@ -1,0 +1,139 @@
+.header {
+    display: flex;
+    position: absolute;
+    /* border: 2px solid blue; */
+    /* background-color: #f4f4f4; */
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* overflow: visible; */
+    z-index: 1000;
+  }
+  
+  .subheader {
+    position: absolute; 
+    width: 88%;
+    top: 0;
+    /* border: 2px solid red; */
+    /* height: 0.9rem; */
+    /* flex-wrap: wrap; */
+    margin: 0;
+    /* background-color: black; */
+    background-image: url("images/blankspace.jpg");
+    background-repeat: repeat;
+    font-size: 15pt;
+    color: rgb(42, 42, 39);
+    z-index: -1;
+    filter: blur(0.5px) invert(1);
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 0 0 4px 0 rgb(170, 170, 170);
+    text-align: right;
+    padding-right: 1%;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    justify-content: right;
+    /* border: 2px solid white; */
+    }
+
+.c1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 100px solid red; */
+}
+.parag{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-height: 400px;
+  overflow: auto;
+  background-color: rgba(205, 215, 226, 0.959);
+  box-shadow: 0 0 10px 2px rgb(170, 170, 170);
+  margin: 1%;
+  margin-top: 12vh;
+  padding: 20px;
+  z-index: 100000;
+  font-size: 14.5pt;
+  color: rgb(24, 24, 24);
+  filter: blur(0.4px);
+  }
+
+
+
+#text1 img.heady{
+    height: 89vh;
+    width: 100%;
+    /* padding: 2px; */
+    object-fit: fill;
+    transition: transform 0.03s;
+    z-index: 1000;
+    /* border: 2px solid brown; */
+    /* position: sticky; */
+  }
+#text1 img.heady:hover{
+  transform: scale(1.01);
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: rgb(35, 33, 41);
+  margin: 0;
+  box-shadow: 0 0 16px 0 rgb(82, 82, 82);
+  filter: blur(0.6px);
+  }
+
+.f_txt {
+  font-size: 14pt;
+  font-weight: bold;
+  color: rgb(197, 197, 194);
+  z-index: 10000;
+  padding: 0.2%;
+}
+
+.ig {
+  /* position: relative; */
+  object-fit: contain;
+  /* box-sizing: content-box; */
+  /* border: 10px solid red; */
+  width: 5%;
+  padding: 0;
+  margin: 0;
+  /* margin-left: 15%; */
+
+  box-shadow: 0 0 16px 2px rgb(164, 169, 194);
+  /* align-self: flex-end; */
+  overflow: visible;
+  left: -18px;
+  filter: brightness(0.5) invert(0.9);
+}
+
+@media (max-width: 800px){
+
+    .parag {
+      padding-top: 1%;
+      width: 60%;
+      font-size: 14pt;
+      /* max-height: 600px; */
+      overflow: auto;
+      align-items: flex-start;
+      /* padding: 1%; */
+    }
+
+  }
+body {
+    font-family: 'Lucida Sans Console', Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/backgorund-crossing2.jpg'); 
+    background-repeat: repeat;
+    background-size: 25% auto;
+    /* background-color: goldenrod; */
+
+  }

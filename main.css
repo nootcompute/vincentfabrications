@@ -1,0 +1,294 @@
+body {
+  background-image: url('images/background-crossing.jpg');
+  background-repeat: repeat;
+  background-size: 25% auto;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* height: 100%; */
+}
+
+.header {
+  display: flex;
+  /* border: 2px solid blue; */
+  /* background-color: #f4f4f4; */
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid white; */
+
+  /* background-image: url('images/background-crossing.jpg'); */
+  /* background-repeat: repeat; */
+  /* background-size: 25% auto; */
+  /* filter: invert(0.9); */
+  /* overflow: hidden; */
+}
+.ig {
+  position: sticky;
+  object-fit: contain;
+  display: none;
+  /* box-sizing: content-box; */
+  /* border: 10px solid red; */
+  width: 2%;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 16px 2px rgb(164, 169, 194);
+  /* align-self: flex-end; */
+  overflow: visible;
+  left: -18px;
+  filter: brightness(0.5) invert(0.9);
+}
+.subheader {
+  position: sticky;
+  display: none;
+  top: 0;
+  /* border: 2px solid red; */
+  /* height: 0.9rem; */
+  /* flex-wrap: wrap; */
+  margin: 0;
+  /* background-image: url('images/blankspace.jpg'); */
+  /* background-repeat: repeat-x; */
+  /* background-size: auto; */
+  background-color: rgba(155, 167, 179);
+  z-index: 10000;
+  opacity: 95%;
+  box-shadow: 0 0 36px 19px rgb(155, 167, 179);
+  
+}
+
+.h_txt{
+  font-size: small;
+  color: rgb(128, 126, 117);
+  filter: blur(0.6px);
+  margin: 0.1%;
+}
+
+/* .cheeks {
+  position: absolute;
+  width: 5%;
+  background-color: black;
+  height: 100%;
+  z-index: -1;
+}
+
+.cheeks2 {
+  position: absolute;
+  width: 5%;
+  background-color: black;
+  height: 100%;
+  z-index: -1;
+  right: 0;
+} */
+
+#text1 img.heady{
+  width: 55%;
+  height: auto;
+  margin: 1%;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-bottom: 0;
+  /* padding-top: 1%; */
+  object-fit: contain;
+  box-shadow: 0 0 16px 2px rgb(164, 169, 194);
+}
+
+/* #text1 {
+  font-size: 120%;
+  margin-right: auto;
+  align-self: center;
+  padding: 16px;
+} */
+
+
+#photos {
+  /* Prevent vertical gaps */
+  /* border: 2px solid yellow; */
+  margin: 0 auto;
+  /* width: 100%; */
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  /* height: 100%; */
+  /* background-image: url('images/background-crossing.jpg');
+  background-repeat: repeat;
+  background-size: 25% auto; */
+  /* border: 0.45rem solid white; */
+  /* flex-direction: row; default*/ 
+}
+#photos img.ls {
+  max-width: 62%;
+  max-height: 900px;
+  /* align-self: center; */
+}
+#photos img.pt {
+  max-width: 31%;
+  max-height: 900px;
+  /* align-self: flex-start; */
+}
+#photos img{
+  padding: 1%;
+  object-fit: contain;
+  /* border: 0.9em solid white; */
+  box-sizing: content-box;
+  z-index: 2;
+  /* background-color: rgb(255, 255, 255, 0.9); */
+}
+
+
+
+/* #photos img:hover{
+  transform: scale(1.05);
+} */
+/* HERE FOR FORMATTING */
+
+#headings img:hover{
+  transform: scale(1.15) rotate(5deg);
+}
+/* 🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒🐒 */
+
+#headings {
+  position: absolute;
+  display: grid;
+  /* outline: 2px solid black; */
+  /* z-index: 1000; */
+  margin: 43% auto;
+  grid-template-columns: 1fr; /* Single column */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
+  width: 27%;
+  height: auto;
+  max-height: 900px;
+  /* border: 2pt solid red; */
+  /* top: 50%; Adjust as needed */
+  /* left: 50%; Adjust as needed */
+  /* transform: translate(0%, 17%); */
+  /* border: 2px solid aqua; */
+}
+
+#headings a{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0px;
+  flex: 0;
+  padding-bottom: 150%;
+  /* z-index: 1000; */
+  /* border: 2px solid orange; */
+}
+
+#headings img.ct {
+  max-width: 70%;
+  rotate: -1.2deg;
+  /* align-self: end; */
+}
+#headings img.ct1 {
+  max-width: 65%;
+  rotate: 4.2deg;
+  /* align-self: start; */
+}
+#headings img.ct2 {
+  max-width: 97.5%;
+  rotate: -3deg;
+  /* align-self: center; */
+}
+#headings img {
+  transition: transform 0.03s;
+  /* border: 2px solid purple; */
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  overflow: hidden;
+  /* box-shadow: 0 0 10px 0px rgb(185, 185, 173); */
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: rgb(32, 20, 203);
+  margin: 0;
+  line-height: 1.38;
+}
+
+.f_txt {
+  font-size: small;
+  color: rgb(255, 251, 229);
+  z-index: 10000;
+  padding: 0.2%;
+  filter: blur(0.7px)
+}
+
+@media (max-width: 800px){
+  #photos img:last-of-type:not(#headings img){
+    /* display: flex; */
+    /* border: 10px solid red; */
+    order: -1;
+  }
+  #photos img.ls {
+    max-width: 84%;
+    /* align-self: center; */
+  }
+  #photos img.pt {
+    max-width: 41%;
+    /* align-self: flex-start; */
+  }
+  #headings a{
+    /* transform: translate(0%, -132%); */
+    padding-bottom: 0%;
+    padding-left: 4%;
+    padding-right: 4%;
+    /* text-align: start; */
+
+  }
+  #headings {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    grid-template-rows: 1fr; /* Single column */
+    grid-template-columns: repeat(3, 1fr); 
+    /* position: sticky; */
+    /* top: 0; */
+    order: -2;
+    z-index: 1000;
+    background-color: rgba(155, 167, 179, 0.681);
+    /* flex-direction: row; */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 54px 18px rgb(155, 167, 179, 0.9);
+    
+
+  }
+
+  #headings img.ct1{
+    rotate: -0.2deg;
+    width: 60%;
+  }
+  #headings img.ct2{
+    rotate: 0.1deg;
+    width: 90%;
+  }
+  #headings img.ct{
+    width: 55%;
+  }
+
+  #text1 img.heady {
+    width: 59%;
+    margin-bottom: 1%;
+    /* border: 2px solid red; */
+    margin-right: 0;
+  }
+  .header{
+    position: absolute;
+    z-index: 10000;
+    background-image: url("images/background-crossing.jpg");
+    background-repeat: repeat;
+    background-size: 25% auto;
+    opacity: 0.88;
+  }
+  .ig {
+    position: sticky;
+    width: 5%;
+    margin-bottom: 1%;
+  }
+}

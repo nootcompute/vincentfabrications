@@ -1,4 +1,4 @@
-const headyImage = '<img src="images/verticalheader.jpg" alt="vincenz" class="heady"></img>';
+const headyImage = '<img src="images/HEADING_vinc.jpg" alt="vincenz" class="heady"></img>';
 $('#text1').append(headyImage);
 
 $('.header').click(function () {

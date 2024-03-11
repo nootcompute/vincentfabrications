@@ -1,3 +1,15 @@
+body {
+  font-family: 'Lucida Sans Console', Helvetica, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/backgorund-crossing2.jpg'); 
+  background-repeat: repeat;
+  background-size: 25% auto;
+  overflow: hidden;
+  /* background-color: goldenrod; */
+
+}
+
 .header {
     display: flex;
     position: absolute;
@@ -130,20 +142,19 @@
       max-width: 100%;
     }
 
+    .header{
+      display: none;
+    }
     .subheader {
-      z-index: 10000;
       width: auto;
-      padding: 2%;
+      padding: 1%;
+    }
+
+    body {
+      background-image: url('images/HEADING_vinc.jpg'); 
+      background-repeat: repeat;
+      background-size: 99.8% auto;
+      background-position: right;
     }
   }
-body {
-    font-family: 'Lucida Sans Console', Helvetica, sans-serif, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('images/backgorund-crossing2.jpg'); 
-    background-repeat: repeat;
-    background-size: 25% auto;
-    overflow: hidden;
-    /* background-color: goldenrod; */
 
-  }

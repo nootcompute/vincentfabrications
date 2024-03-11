@@ -152,9 +152,11 @@ body {
 
     body {
       background-image: url('images/HEADING_vinc.jpg'); 
-      background-repeat: repeat;
-      background-size: 99.8% auto;
-      background-position: right;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+
     }
   }
 

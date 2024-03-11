@@ -1,10 +1,6 @@
 const headyImage = '<img src="images/HEADING_vinc.jpg" alt="vincenz" class="heady"></img>';
 $('#text1').append(headyImage);
 
-$('.header').click(function () {
-    window.location = 'vinnnweb.html';
-});
-
 document.addEventListener("DOMContentLoaded", function(event) {
     // Page has finished loading
     var image = document.querySelector('.overlay');

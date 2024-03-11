@@ -1,4 +1,4 @@
-const headyImage = '<img src="images/HEADING_vinc.jpg" alt="vincenz" class="heady"></img>';
+const headyImage = '<img src="images/TITLE_headervinc.jpg" alt="vincenz" class="heady"></img>';
 $('#text1').append(headyImage);
 
 document.addEventListener("DOMContentLoaded", function(event) {

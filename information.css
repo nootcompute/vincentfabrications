@@ -10,42 +10,51 @@ body {
 
 }
 
+.underlay_im {
+  position: absolute;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  width: 40%;
+}
+
 .header {
-    display: flex;
-    position: absolute;
-    /* border: 2px solid blue; */
-    /* background-color: #f4f4f4; */
-    align-items: flex-start;
-    justify-content: flex-start;
-    /* overflow: visible; */
-    z-index: 1000;
-  }
+  display: flex;
+  /* border: 2px solid blue; */
+  /* background-color: #f4f4f4; */
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
   
   .subheader {
     position: absolute; 
-    width: 88%;
+    width: 87%;
     top: 0;
     /* border: 2px solid red; */
     /* height: 0.9rem; */
     /* flex-wrap: wrap; */
     margin: 0;
     /* background-color: black; */
-    background-image: url("images/blankspace.jpg");
-    background-repeat: repeat;
-    font-size: 15pt;
-    color: rgb(42, 42, 39);
+    /* background-image: url("images/blankspace.jpg"); */
+    /* background-repeat: repeat; */
+    background-color: rgba(155, 167, 179, 0.781);
+    font-size: 16.5pt;
+    color: rgb(44, 45, 68);
     z-index: -1;
-    filter: blur(0.5px) invert(1);
+    filter: blur(1.2px);
     font-weight: bold;
     font-style: italic;
-    box-shadow: 0 0 4px 0 rgb(170, 170, 170);
+    box-shadow: 0 0 36px 19px rgb(155, 167, 179);
     text-align: right;
     padding-right: 1%;
     padding-top: 0.3%;
     padding-bottom: 0.3%;
     justify-content: right;
     /* border: 2px solid white; */
-    }
+  }
 
 .c1 {
   display: flex;
@@ -74,18 +83,19 @@ body {
 
 
 
-#text1 img.heady{
-    max-width: 40%;
-    /* padding: 2px; */
-    object-fit: fill;
-    /* transition: transform 0.03s; */
-    z-index: 1000;
-    /* border: 2px solid brown; */
-    /* position: sticky; */
+  #text1 img.heady{
+    width: 55%;
+    height: auto;
+    /* padding: 1%; */
+    margin: 1%;
+    object-fit: contain;
+    transition: transform 0.03s;
+    box-shadow: 0 0 6px 0 rgb(164, 169, 194);
   }
-/* #text1 img.heady:hover{
+#text1 img.heady:hover{
   transform: scale(1.01);
-} */
+}
+
 
 .footer {
   display: flex;
@@ -138,22 +148,24 @@ body {
       /* padding: 1%; */
     }
 
-    #text1 img.heady{
-      max-width: 100%;
+    #text1 img.heady {
+      width: 59%;
     }
 
-    .header{
-      display: none;
-    }
     .subheader {
-      width: auto;
-      padding: 1%;
+      width: 99%;
+      font-size: 12pt;
+      white-space: pre-line;
+    }
+
+    .underlay_im {
+      display: none;
     }
 
     body {
       background-image: url('images/HEADING_vinc.jpg'); 
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: right;
       background-size: cover;
       background-attachment: fixed;
 

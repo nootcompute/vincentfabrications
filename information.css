@@ -142,9 +142,10 @@ body {
       padding-top: 1%;
       width: 60%;
       font-size: 14pt;
-      /* max-height: 600px; */
       overflow: auto;
       align-items: flex-start;
+      margin-top: 6vh;
+      max-height: 60vh;
       /* padding: 1%; */
     }
 

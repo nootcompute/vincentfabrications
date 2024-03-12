@@ -49,8 +49,8 @@ var pIndex
 $photos.click(function () {
     pIndex = $photos.index(this);
     overlay.style.display = 'block';
-    o_img.src = this.src;
     document.body.style.overflow = 'hidden';
+    o_img.src = this.src;
     
     // alert(nextImage.attr('src'))
 });

@@ -12,20 +12,3 @@ document.addEventListener('keydown', function(event) {
             break;
     }
 })
-
-// Define a function to check container visibility and update body overflow
-function checkContainerVisibility() {
-    var container = document.getElementById('overlay');
-    var containerStyle = window.getComputedStyle(container);
-    var containerDisplay = containerStyle.getPropertyValue('display');
-    
-    if (containerDisplay === 'block') {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-  }
-  
-  // Attach an event listener to the click event on the document
-  document.addEventListener('click', checkContainerVisibility);
-  

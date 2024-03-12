@@ -52,6 +52,13 @@ function concatenateImagesWithCustomOrder(allImagespt, allImagesls) {
   return concatenatedArray.join('');
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  var img = document.querySelector('.heady');
+  img.onload = function () {
+    document.getElementById('headings').style.display = 'grid';
+  }
+});
+
 const imgString = concatenateImagesWithCustomOrder(allImagespt, allImagesls);
 $('#photos').append(imgString);
 $('#headings').append(allHeadings.join(''));

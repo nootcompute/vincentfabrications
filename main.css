@@ -151,8 +151,8 @@ body {
 
 #headings {
   position: absolute;
-  display: grid;
-  /* outline: 2px solid black; */
+  display: none; 
+  /* display grid^^ */
   /* z-index: 1000; */
   margin: 43% auto;
   grid-template-columns: 1fr; /* Single column */

@@ -72,6 +72,7 @@
 }
 .text2{
     background-color: blue;
+    filter: blur(0.5px);
 }
 
 .o_img {

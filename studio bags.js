@@ -59,8 +59,8 @@ function checkDirection() {
   if (touchendX < touchstartX) o_img.src = $photos.eq(++pIndex % $photos.length).attr('src');
   if (touchendX > touchstartX) o_img.src = $photos.eq(--pIndex + $photos.length % $photos.length).attr('src');
 }
-
-overlay.addEventListener('touchstart', e => {
+  
+document.addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenX
 })
 

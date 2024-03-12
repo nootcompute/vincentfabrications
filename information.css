@@ -68,7 +68,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 60%;
-  max-height: 400px;
+  /* max-height: 80vh; */
   overflow: auto;
   background-color: rgba(205, 215, 226, 0.959);
   box-shadow: 0 0 10px 2px rgb(170, 170, 170);

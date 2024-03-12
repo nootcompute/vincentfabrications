@@ -15,6 +15,7 @@ body {
   /* background-color: #f4f4f4; */
   align-items: center;
   justify-content: center;
+  z-index: 100000000000;
   /* border: 2px solid white; */
 
   /* background-image: url('images/background-crossing.jpg'); */

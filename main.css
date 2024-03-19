@@ -160,6 +160,7 @@ body {
   width: 27%;
   height: auto;
   max-height: 900px;
+  z-index: 10000;
   /* border: 2pt solid red; */
   /* top: 50%; Adjust as needed */
   /* left: 50%; Adjust as needed */

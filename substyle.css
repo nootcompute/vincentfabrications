@@ -95,7 +95,7 @@
   }
 
 #photos img{
-    padding: 1%;
+    margin: 1%;
     object-fit: contain;
     /* border: 0.9em solid white; */
     box-sizing: content-box;

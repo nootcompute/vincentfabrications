@@ -122,7 +122,8 @@ $('.ct2').click(function() {
 });
 
 $('.ct1').click(function() {
-  alert('WORK IN PROGRESS:🐵🙈🐘🙉🙊🦍🍌🥥🔧🧗🦧🌴🐆🐅🦒');
+  // alert('WORK IN PROGRESS:🐵🙈🐘🙉🙊🦍🍌🥥🔧🧗🦧🌴🐆🐅🦒');
+  window.location = 'shop.html';
 });
 
 $('.s11').click(function() {

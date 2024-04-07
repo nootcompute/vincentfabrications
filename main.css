@@ -235,6 +235,11 @@ body {
     max-width: 41%;
     /* align-self: flex-start; */
   }
+
+  #photos img{
+    z-index: -1;
+  }
+
   #headings a{
     /* transform: translate(0%, -132%); */
     padding-bottom: 0%;

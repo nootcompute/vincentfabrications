@@ -9,3 +9,26 @@ function generateFilenames(n, flag) {
     }
     return images;
 }
+
+const allImagesls = generateFilenames(3, 0);
+const allImagespt = generateFilenames(11, 1);
+
+const concatenatedArray = [];
+let i2 = 0;
+let flag = 5;
+for (let i = 0; i < allImagespt.length; i++) {
+    concatenatedArray.push(allImagespt[i]); // PT
+    flag--;
+    if (i2 < allImagesls.length && !flag) {
+        concatenatedArray.push(allImagesls[i2]); // LS
+        flag += 2;
+        i2++;
+    }
+}
+
+$('#photos').append(concatenatedArray.join(''));
+
+$('.heady').click(function () {
+    window.location = 'vinnnweb.html';
+});
+

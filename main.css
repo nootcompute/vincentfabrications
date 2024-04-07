@@ -237,7 +237,7 @@ body {
   }
 
   #photos img{
-    z-index: -1;
+    z-index: 1;
   }
 
   #headings a{
@@ -262,6 +262,7 @@ body {
     position: sticky;
     top: 0;
     box-shadow: 0 0 54px 18px rgb(155, 167, 179, 0.9);
+    z-index: 10;
     
 
   }
@@ -291,6 +292,7 @@ body {
     background-repeat: repeat;
     background-size: 25% auto;
     opacity: 0.88;
+    z-index: 100;
   }
   .ig {
     position: sticky;

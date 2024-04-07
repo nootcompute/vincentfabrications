@@ -133,3 +133,7 @@ $('.s11').click(function() {
 $('.ig').click(function() {
   window.location = 'https://www.instagram.com/vincent.fabrications/';
 });
+
+$('.heady').click(function () {
+  window.location = 'vinnnweb.html';
+});

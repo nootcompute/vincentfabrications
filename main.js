@@ -18,9 +18,9 @@ const allImagesls = [
 ];
 
 const allHeadings =  [
-  '<img src="images/IMG_0088.jpg" alt="Shop" class="ct1">',
-  '<img src="images/IMG_0089.jpg" alt="Information" class="ct2">',
-  '<img src="images/IMG_0090.jpg" alt="Commissions" class="ct">'
+  '<a class="z"><img src="images/IMG_0088.jpg" alt="Shop" class="ct1"></a>',
+  '<a class="x"><img src="images/IMG_0089.jpg" alt="Information" class="ct2"></a>',
+  '<a class="c"><img src="images/IMG_0090.jpg" alt="Commissions" class="ct"></a>'
 ];
 
 function shuffleArray(array) {

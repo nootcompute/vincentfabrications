@@ -16,6 +16,7 @@ document.addEventListener('keydown', function(event) {
 const overlay = document.getElementById('overlay');
 const o_img = document.getElementById('o_img');
 const photos = document.getElementById('photos')
+const footer = document.querySelector('.footer')
 
 var $photos = $('#photos img');
 var pIndex
@@ -24,7 +25,8 @@ $photos.click(function () {
     overlay.style.display = 'block';
     o_img.src = this.src;
     document.body.style.overflow = 'hidden';
-    photos.style.display = 'hidden'
+    photos.style.display = 'none';
+    footer.style.display = 'none';
     
     // alert(nextImage.attr('src'))
 });
@@ -33,7 +35,8 @@ $photos.click(function () {
 overlay.addEventListener('click',function () {
     overlay.style.display = 'none';
     document.body.style.overflow = 'auto';
-    photos.style.display = 'flex'
+    photos.style.display = 'flex';
+    footer.style.display = 'flex';
 } );
 
 let touchstartX = 0

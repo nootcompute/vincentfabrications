@@ -14,9 +14,10 @@ document.addEventListener('keydown', function(event) {
 })
 
 const overlay = document.getElementById('overlay');
+// const arrows = document.getElementsByClassName('arrow');
 const o_img = document.getElementById('o_img');
-const photos = document.getElementById('photos')
-const footer = document.querySelector('.footer')
+const photos = document.getElementById('photos');
+const footer = document.querySelector('.footer');
 
 var $photos = $('#photos img');
 var pIndex
@@ -28,7 +29,7 @@ $photos.click(function () {
     photos.style.display = 'none';
     footer.style.display = 'none';
     
-    // alert(nextImage.attr('src'))
+    
 });
 
 

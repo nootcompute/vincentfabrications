@@ -19,6 +19,11 @@ function generateFilenames2(n, flag, path) {
     return images;
 }
 
+function grabfile(path) {
+    const pathman = `${path.slice(0, -4)}/text.txt`;
+    return pathman
+}
+
 const allImagesls = generateFilenames(0, 0);
 const allImagespt = generateFilenames(7, 1);
 
@@ -45,10 +50,10 @@ $('.heady').click(function () {
 
 
 
-
+const overlay = document.getElementById('overlay');
 
 // HERE BELOW
-document.addEventListener('keydown', function(event) {
+overlay.addEventListener('keydown', function(event) {
     switch(event.key) {
         case 'ArrowRight':
             o_img.src = $photos.eq(++pIndex % $photos.length).attr('src');
@@ -63,24 +68,46 @@ document.addEventListener('keydown', function(event) {
     }
 })
 
-const overlay = document.getElementById('overlay');
+
 // const arrows = document.getElementsByClassName('arrow');
 const o_img = document.getElementById('o_img');
+const o_img2 = document.getElementById('o_img2');
+const o_img3 = document.getElementById('o_img3');
 const photos = document.getElementById('photos');
 const footer = document.querySelector('.footer');
 
 var $photos = $('#photos img');
 var pIndex;
+var $phot2
+
 $photos.click(function () {
     // pIndex = $photos.index(this);
-    var iteminfo = generateFilenames2(1, 1, this.src)
-    $('#itemsContainer').html(iteminfo.join(''));
+    $('#itemsContainer').append(generateFilenames2(6, 1, this.src).join(''));
+    $phot2 = $('#itemsContainer img');
+    o_img.src = $phot2.eq(0).attr('src');
+    o_img2.src = $phot2.eq(1).attr('src');
+    o_img3.src = $phot2.eq(2).attr('src');
 
-    o_img.src = $('#itemsContainer img:first').attr('src');
+    pIndex = 0;
+
     overlay.style.display = 'block';
     document.body.style.overflow = 'hidden';
     photos.style.display = 'none';
     footer.style.display = 'none';
+
+    fetch( grabfile(this.src) ) // fetch the text file
+        .then(response => response.text()) // get the text from the response
+        .then(text => {
+            document.getElementById('fileContent').innerHTML = text; // update the DOM
+        })
+        .catch(err => console.log('Error reading file', err));
+
+
+
+
+
+
+
 });
 
 // var iphotos = $('#photos img');
@@ -91,19 +118,14 @@ $photos.click(function () {
 
 // })
 
-// overlay.addEventListener('click',function () {
-//     overlay.style.display = 'none';
-//     document.body.style.overflow = 'auto';
-//     photos.style.display = 'flex';
-//     footer.style.display = 'flex';
-// } );
+
 
 let touchstartX = 0
 let touchendX = 0
     
 function checkDirection() {
   if (touchendX < touchstartX) o_img.src = $photos.eq(++pIndex % $photos.length).attr('src');
-  if (touchendX > touchstartX) o_img.src = $photos.eq(--pIndex + $photos.length % $photos.length).attr('src');
+  if (touchendX > touchstartX) o_img.src = $photos.eq((--pIndex + $photos.length) % $photos.length).attr('src');
 }
   
 document.addEventListener('touchstart', e => {
@@ -127,9 +149,17 @@ const left = $('.left');
 const right = $('.right');
 
 left.click(function() {
-    alert('left arrow');
+    o_img.src = $phot2.eq((--pIndex + $phot2.length) % $phot2.length).attr('src');
+    o_img2.src = $phot2.eq((pIndex + 1 + $phot2.length) % $phot2.length).attr('src');
+    o_img3.src = $phot2.eq((pIndex + 2 + $phot2.length) % $phot2.length).attr('src');
+
     // o_img.src = $photos.eq(--pIndex % $photos.length % $photos.length).attr('src');
 });
+
 right.click(function() {
-    alert('right arrow');
+    o_img.src = $phot2.eq(++pIndex % $phot2.length).attr('src');
+    o_img2.src = $phot2.eq((pIndex + 1) % $phot2.length).attr('src');
+    o_img3.src = $phot2.eq((pIndex + 2) % $phot2.length).attr('src');
+
+
 });

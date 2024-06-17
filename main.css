@@ -154,7 +154,7 @@ body {
   display: none; 
   /* display grid^^ */
   /* z-index: 1000; */
-  margin: 43% auto;
+  margin: 41% auto;
   grid-template-columns: 1fr; /* Single column */
   grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
   width: 27%;

@@ -35,20 +35,88 @@
 
 .suboverlay{
   display: flex;
-  justify-self: center;
   align-items: center;
-
+  text-align: Left;
+  margin-left: 14%;
   background-color: rgb(178, 192, 209);
   padding: 10px;
   height: 100%;
+  width: 70%;
 }
 
 .overlay {
-  background-color: rgba(255, 255, 255);
+  background-image: url('images/background-crossing.jpg'); 
+  background-repeat: repeat;
+  background-size: 25% auto;
   justify-content: center;
-  text-align: center;
   align-items: center;
+  user-select: none;
+  flex-direction: row;
+  /* border: 8px solid rgb(170, 170, 170); */
 }
+
+.overlay img{
+  box-shadow: 0px 3px 7px 0px rgba(142, 161, 202, 0.377);
+  
+}
+.o_img {
+  margin-bottom: 4%;
+  /* border: 2px solid green; */
+  height: 85%;
+  max-width: 80%;
+  z-index: 10;
+}
+
+
+.o_box{
+  display: none;
+  padding-top: 10%;
+  transform: translateX(-10%);
+  z-index: 100000000000000;
+}
+
+.o_box2{
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin-bottom: 0%;
+  height: 85%;
+}
+
+
+.fileContent {
+  filter: blur(0.4px);
+  padding: 12%;
+
+
+
+}
+
+.h1 {
+  font-size: 26pt;
+  font-weight: bold;
+  margin-bottom: 6%;
+  padding: 2%;
+  position: relative;
+  color: rgb(105, 105, 105);
+  background-color: azure;
+  filter: blur(0.5px);
+}
+
+.d {
+  font-size: large;
+  font-style: normal;
+  line-height: 24px;
+  color: rgb(0, 0, 0)
+}
+
+.p {
+  color: rgba(58, 58, 188, 0.562);
+  font-style: normal;
+}
+
+
+
 /* 
 .overlay {
   display: none;

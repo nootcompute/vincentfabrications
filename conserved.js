@@ -9,6 +9,8 @@ document.addEventListener('keydown', function(event) {
         case 'Escape':
             overlay.style.display = 'none';
             document.body.style.overflow = 'auto';
+            photos.style.display = 'flex';
+            footer.style.display = 'flex';
             break;
     }
 })

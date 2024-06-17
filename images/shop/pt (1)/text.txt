@@ -1,0 +1,20 @@
+<h1 class="h1">Product name: BOOK BAG + Bread clip by Tyke Rashid </h1>
+
+<d class="d">Soiled waxed tent canvas is meticulously reworked to create large bags that are as much of a garment as they are a bag. 
+They are gargantuan heavy-duty sacks made for cramming large heavy books, shopping, or lead piping into. Their wide quilted strapping evenly distributes any weight across your shoulders and chest. 
+Each bag toiled into existence sharing a centre front felled seam, fine Japanese brass rivets, large reinforcing stiches and inside pockets for gather all kinds of miscellaneous junk. 
+The book bag comes in two colours beige and brownish grey. the bags fail to exist within any solid fashion aesthetic and a versatile pairing to a range of outfits. 
+Through these bags Vincent Fabrications is able to capture what they think is the here and now of an upcoming Melbourne whilst simultaneously creating a garment that may have the same longevity as an artifact.
+
+<br>Bread clip fasteners designed by Tyke Rashid and laser cut in steal for optimal flexing on them comical style abilities. </d>
+
+<br><br><d2 class = "d2 d">Production style: Made to order, in house </d2>
+
+<br><d3 class = "d3 d">Material composition: Cotton Canvas </d3>
+
+<br><d4 class = "d4 d">Sizing details: 15x150cm strap, 4litre approx. holding size, model is 189cm tall, one size fits most can be made shorter upon request. </d4>
+
+<p class = "p">Expense: $465 AUD (free national shipping) </p>	
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <!-- Identify your business so that you can collect the payments. --> <input type="hidden" name="business" value="herschelgomez@xyzzyu.com"> <!-- Specify a Buy Now button. --> <input type="hidden" name="cmd" value="_xclick"> <!-- Specify details about the item that buyers will purchase. --> <input type="hidden" name="item_name" value="Hot Sauce-12 oz. Bottle"> <input type="hidden" name="amount" value="5.95"> <input type="hidden" name="currency_code" value="USD"> <!-- Specify the discount percentages that apply to the item. --> <input type="hidden" name="discount_rate" value="0"> <input type="hidden" name="discount_rate2" value="100"> <input type="hidden" name="discount_num" value="1"> <!-- Prompt buyers to enter the quantities they want. --> <input type="hidden" name="undefined_quantity" value="1"> <!-- Display the payment button. --> <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now"> <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" > </form>
+

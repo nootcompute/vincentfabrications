@@ -154,7 +154,7 @@ body {
   display: none; 
   /* display grid^^ */
   /* z-index: 1000; */
-  margin: 41% auto;
+  margin: 34% auto;
   grid-template-columns: 1fr; /* Single column */
   grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
   width: 27%;
@@ -174,7 +174,7 @@ body {
   justify-content: center;
   padding: 0px;
   flex: 0;
-  padding-bottom: 150%;
+  padding-bottom: 120%;
   /* z-index: 1000; */
   /* border: 2px solid orange; */
 }
